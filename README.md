@@ -45,17 +45,17 @@ citizen-feedback-system/
 
 ### 🔧 Backend Setup
 
-cd backend
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
+`cd backend`
+`python -m venv venv`
+`source venv/bin/activate  # or venv\Scripts\activate`
+`pip install -r requirements.txt`
+`python manage.py migrate`
+`python manage.py runserver`
 
 ### 🔧 Frontend Setup
-cd frontend
-npm install
-npm start
+`cd frontend`
+`npm install`
+`npm start`
 
 - Update API base URL in frontend/src/components/ComplaintForm.jsx:
 fetch('http://localhost:8000/api/complaints/', ...)
