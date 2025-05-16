@@ -30,14 +30,17 @@ This is a Minimum Viable Product (MVP) developed to improve transparency, respon
 - **Deployment:** Render (Backend) and Netlify (Frontend)
 
 ---
-
 ## 📁 Project Structure
-citizen-feedback-system/
-├── backend/ # Django project for handling API and admin
-│ └── gov_feedback/
-├── frontend/ # React app for user complaint interface
-│ └── src/
-└── README.md
+
+```bash
+├── citizen-engagement-system/
+├── backend/
+│   ├── gov_feedback/
+│   ├── manage.py
+├── frontend/
+│   ├── public/
+│   ├── src/
+```
 
 ---
 
