@@ -3,8 +3,10 @@
 A full-stack web application that allows citizens to submit complaints or feedback on public services. Government institutions can review, respond, and track the status of each complaint through an admin interface.
 
 This is a Minimum Viable Product (MVP) developed to improve transparency, responsiveness, and engagement between citizens and public service providers.
-
-[![Frontend Documentation](https://img.shields.io/badge/Frontend-blue?style=for-the-badge)](./frontend/README.md) [![Backend Documentation](https://img.shields.io/badge/Backend-green?style=for-the-badge)](./backend/README.md)
+### Frontend Documentation
+[![Frontend Documentation](https://img.shields.io/badge/Frontend-blue?style=for-the-badge)](./frontend/README.md) 
+### Backend Documentation
+[![Backend Documentation](https://img.shields.io/badge/Backend-green?style=for-the-badge)](./backend/README.md)
 
 ## 🚀 Features
 
@@ -24,9 +26,9 @@ This is a Minimum Viable Product (MVP) developed to improve transparency, respon
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React, Bootstrap
+- **Frontend:** Vite, Bootstrap, Vanilla JS
 - **Backend:** Django, Django REST Framework
-- **Database:** SQLite (can be upgraded)
+- **Database:** SQL
 - **Deployment:** Render (Backend) and Netlify (Frontend)
 
 ---
@@ -38,7 +40,6 @@ This is a Minimum Viable Product (MVP) developed to improve transparency, respon
 │   ├── gov_feedback/
 │   ├── manage.py
 ├── frontend/
-│   ├── public/
 │   ├── src/
 ```
 
@@ -60,17 +61,10 @@ This is a Minimum Viable Product (MVP) developed to improve transparency, respon
 `npm install`
 `npm start`
 
-- Update API base URL in frontend/src/components/ComplaintForm.jsx:
-fetch('http://localhost:8000/api/complaints/', ...)
 
 ## 🌍 Deployment
+
 🧩 Backend on Render
-Create new Web Service
-
-Point to backend/
-
-Use gunicorn gov_feedback.wsgi as start command
-
 💻 Frontend on Netlify
 
 Deploy from frontend/ directory
