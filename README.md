@@ -1,5 +1,5 @@
 # Citizen Engagement System (MVP)
-## Demo Link: (Citizen-Engagement-Site)[https://deploy-preview-3--citizen-engagement-site.netlify.app/]
+## Demo Link: [Citizen-Engagement-Site](https://deploy-preview-3--citizen-engagement-site.netlify.app/)
 
 A full-stack web application that allows citizens to submit complaints or feedback on public services. Government institutions can review, respond, and track the status of each complaint through an admin interface.
 
