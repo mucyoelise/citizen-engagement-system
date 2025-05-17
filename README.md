@@ -71,8 +71,6 @@ Deploy from frontend/ directory
 
 Set REACT_APP_API_URL in environment variables to backend endpoint
 
-## 📄 License
-This project is open source under the MIT License.
 
 
 
