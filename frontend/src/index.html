@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Citizen Engagement System</title>
+    <script type="module" src="./js/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container">
+            <!-- navbar-brand or header -->
+            <a class="navbar-brand text-secondary" href="./index.html">Rwanda Gov</a>
+
+            <!-- Including the icon to be shown after the collapse of links -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Including navigation links -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/submitComplaint.html">Submit Feedback</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/trackComplaint.html">Track Complaints</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/govServices.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/login.html">Join Us</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+      <section class="container-fluid text-white bg-primary py-4 py-lg-0">
+        <div class="row">
+          <div id="hero-text" class="col m-auto">
+            <h1 class="fw-5 fs-4">Your Voice Matters in Our Community</h1>
+            <p class="lead">Submit, track, and resolve complaints about goverment services in one connected platform</p>
+            <div id="inline-buttons">
+              <a href="./pages/submitComplaint.html" type="button" class="btn btn-secondary mb-3 mb-sm-0">Submit a Complaint</a>
+              <a href="./pages/trackComplaint.html" type="button" class="btn btn-outline-dark fs-5">Track Existing Complaint</a>
+            </div>
+          </div>
+          <div id="hero-img" class="col d-none d-lg-block m-auto">
+            <img src="img/gov_rw.jpg" width="100%" alt="gov_image" class="img-fluid">
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid py-4 bg-warning">
+        <header><h1 class="text-center">How it works</h1></header>
+        <div class="row">
+          <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card">
+              <div class="card-body">
+                <h1>1</h1>
+                <h5 class="card-title">Submit</h5>
+                <p class="card-text">File a complaint or feedback about any government service or public issue</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h1>2</h1>
+                <h5 class="card-title">Track</h5>
+                <p class="card-text">Monitor the status of your submission with a unique tracking ID</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h1>3</h1>
+                <h5 class="card-title">Resolve</h5>
+                <p class="card-text">Receive updates and resolutions from the appropriate government agency</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service categories section -->
+      <section class="container-fluid py-5 bg-success">
+        <header><h1 class="text-center">Service Categories</h1></header>
+        <div class="row">
+          <div class="col-sm-6 col-lg-3 mb-3 mb-sm-0">
+            <div class="card" id="serv_cards">
+              <div class="card-body">
+                <img src="img/roads_inf.jpg" width="30%" class="rounded-circle" alt="">
+                <h5 class="card-title">Roads & Infrastructure</h5>
+                <p class="card-text">Issues related to roads, bridges, and public infrastructure</p>
+                <a href="./pages/submitComplaint.html" class="btn btn-primary">Department of Transportation</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card" id="serv_cards">
+              <div class="card-body">
+                <img src="img/waste-mgt.jpg" width="30%" class="rounded-circle" alt="">
+                <h5 class="card-title">Waste Management</h5>
+                <p class="card-text">Garbage collection, recycling, and waste disposal issues</p>
+                <a href="./pages/submitComplaint.html" class="btn btn-primary">Environmental Services</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card" id="serv_cards">
+              <div class="card-body">
+                <img src="img/water_sew.jpg" width="30%" class="rounded-circle" alt="">
+                <h5 class="card-title">Water & Sewage</h5>
+                <p class="card-text">Water quality, supply issues, or sewage problems</p>
+                <a href="./pages/submitComplaint.html" class="btn btn-primary">Water Department</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card" id="serv_cards">
+              <div class="card-body">
+                <img src="img/electricity_pow.jpg" width="30%" class="rounded-circle" alt="">
+                <h5 class="card-title">Electricity & Power</h5>
+                <p class="card-text">Power outages, electrical infrastructure issues</p>
+                <a href="./pages/submitComplaint.html" class="btn btn-primary">Energy Department</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card" id="serv_cards">
+              <div class="card-body">
+                <img src="img/nyungwe-np.jpg" width="30%" alt="" class="rounded-circle">
+                <h5 class="card-title">Parks & Recreation</h5>
+                <p class="card-text">Issues with public parks, playgrounds, and recreational areas</p>
+                <a href="./pages/submitComplaint.html" class="btn btn-primary">Parks Department</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card" id="serv_cards">
+              <div class="card-body">
+                <img src="img/security.jpg" width="30%" class="rounded-circle" alt="">
+                <h5 class="card-title">Public Safety & Security</h5>
+                <p class="card-text">Safety concerns in public areas, suspicious activity</p>
+                <a href="./pages/submitComplaint.html" class="btn btn-primary">Public Safety Department</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card" id="serv_cards">
+              <div class="card-body">
+                <img src="img/public_trans.jpg" width="30%" class="rounded-circle" alt="">
+                <h5 class="card-title">Public Transportation</h5>
+                <p class="card-text">Bus, motor bike, or other public transit issues</p>
+              </div>
+              <a href="./pages/submitComplaint.html" class="btn btn-primary">Transport Authority</a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="card" id="serv_cards">
+              <div class="card-body">
+                <img src="img/noise.png" width="30%" class="rounded-circle" alt="">
+                <h5 class="card-title">Noise Complaints</h5>
+                <p class="card-text">Excessive noise from construction, neighbors, or business</p>
+                <a href="./pages/submitComplaint.html" class="btn btn-primary">Environmental Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Make a complaint section -->
+      <section class="py-5 bg-light text-center">
+        <header><h3 class="fw-4">Ready to make your voice heard?</h3></header>
+        <p>Submit your feedback today and help us imporove public services in your community.</p>
+        <a href="./pages/submitComplaint.html" type="button" class="btn btn-outline-dark fs-5">Submit a Complaint</a>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-5">
+        <section class="container text-center">
+            <div class="row row-gap-3">
+                <div class="col-md-6">
+                    <h2>Connect with Us!</h2>
+                    <a href="https://" class="btn btn-light"><i class="bi bi-instagram px-3"></i></a>
+                    <a href="https://" class="btn btn-light"><i class="bi bi-linkedin px-3"></i></a>
+                    <a href="https://" class="btn btn-light"><i class="bi bi-envelope-at-fill px-3"></i></a>
+                    <a href="https://" class="btn btn-light"><i class="bi bi-whatsapp px-3"></i></a>
+                </div>
+                <div class="col-md-6 ms-auto">
+                    <h2 class="fw-5">Citizen Complaints Platform</h2>
+                    <small>&copy; All rights reserved 2025!</small>
+                </div>
+            </div>
+        </section>
+    </footer>
+  </body>
+</html>
