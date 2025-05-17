@@ -1,0 +1,131 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Submit Complaint</title>
+        <script type="module" src="../js/main.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container">
+                <!-- navbar-brand or header -->
+                <a class="navbar-brand text-secondary" href="../index.html">Rwanda Gov</a>
+
+                <!-- Including the icon to be shown after the collapse of links -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Including navigation links -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./submitComplaint.html">Submit Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./trackComplaint.html">Track Complaints</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./govServices.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">Join Us</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="p-5">
+            <form class="row g-3">
+                <div class="col-12">
+                    <header>
+                        <h2>Complaint Details</h2>
+                        <p>Provide as much details as possible to help us address your issue effectively</p>
+                    </header>
+                    <div>
+                        <label for="summary_title" class="form-label">Title *</label>
+                        <input type="text" class="form-control" id="summary_title" placeholder="Brief summary of your issue" required>
+                    </div>
+                    <div>
+                        <label for="validationDefault04" class="form-label">Category*</label>
+                            <select class="form-select" id="validationDefault04" required>
+                            <option selected disabled value="">Select category..</optio>
+                            <option value="Roads & Infrastructure">Roads & Infrastructure</option>
+                            <option value="Waste Management">Waste Management</option>
+                            <option value="Water & Sewage">Water & Sewage</option>
+                            <option value="Electricity & Power">Electricity & Power</option>
+                            <option value="Parks & Recreation">Parks & Recreation</option>
+                            <option value="Public Safety & Security">Public Safety & Security</option>
+                            <option value="Public Transportation">Public Transportation</option>
+                            <option value="Noise complaints">Noise complaints</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Description*</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Please provide detailed information about your complaint or feedback" required></textarea>
+                    </div>
+
+                </div>
+                <div class="col-12">
+                    <header><h2>Contact Information</h2></header>
+                    <div>
+                        <label for="validationDefault01" class="form-label">Full Name*</label>
+                        <input type="text" class="form-control" id="validationDefault01" placeholder="Your Full Name" required>
+                    </div>
+                    <div>
+                        <label for="validationDefault02" class="form-label">Email* </label>
+                        <input type="email" class="form-control" id="validationDefault02" placeholder="Your email" required>
+                    </div>
+                    <div>
+                        <label for="validationDefault03" class="form-label">Phone Number</label>
+                        <input type="text" class="form-control" id="validationDefault03" placeholder="+250780000000">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <header>
+                        <h2>Attachments</h2>
+                        <p>Add photos or documents that might help describe your issue (optional)</p>
+                    </header>
+                    <div class="mb-3">
+                        <input type="file" class="form-control" aria-label="file example">
+                        <div class="invalid-feedback">Example invalid form file feedback</div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label" for="invalidCheck2">
+                        Agree to terms and conditions
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </main>
+        <footer class="bg-dark text-white py-5">
+            <section class="container text-center">
+                <div class="row row-gap-3">
+                    <div class="col-md-6">
+                        <h2>Connect with Us!</h2>
+                        <a href="https://" class="btn btn-light"><i class="bi bi-instagram px-3"></i></a>
+                        <a href="https://" class="btn btn-light"><i class="bi bi-linkedin px-3"></i></a>
+                        <a href="https://" class="btn btn-light"><i class="bi bi-envelope-at-fill px-3"></i></a>
+                        <a href="https://" class="btn btn-light"><i class="bi bi-whatsapp px-3"></i></a>
+                    </div>
+                    <div class="col-md-6 ms-auto">
+                        <h2 class="fw-5">Citizen Complaints Platform</h2>
+                        <small>&copy; All rights reserved 2025!</small>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+    </html>
