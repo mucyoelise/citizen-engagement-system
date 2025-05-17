@@ -4,7 +4,9 @@ A full-stack web application that allows citizens to submit complaints or feedba
 
 This is a Minimum Viable Product (MVP) developed to improve transparency, responsiveness, and engagement between citizens and public service providers.
 
----
+[![Frontend Documentation](https://img.shields.io/badge/Design-Documentation-blue)](/design/DESIGN_DOC.md) [![Backend Documentation](https://img.shields.io/badge/Client-Documentation-blue)](src/client/README.md)
+
+
 
 ## 🚀 Features
 
